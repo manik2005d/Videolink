@@ -1,0 +1,25 @@
+body {
+    background-color: #f1f3f5;
+}
+
+header {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+.video-section {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLink - Study YouTube Smarter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/mainStyle.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="hero text-center">
+        <h1 class="display-5 fw-bold">🎯 VideoLink - Study YouTube Smarter</h1>
+        <p class="lead mt-3">
+            Focused learning, distraction-free.<br />
+            Paste a YouTube video link below and play it outside of YouTube.
+        </p>
+        </div>
+
+        <div class="form-section">
+        <h2 class="h4 mb-3">Paste YouTube Video URL:</h2>
+        <form action="/yt" method="get">
+            <div class="mb-3">
+                <input name="url" type="url" class="form-control" placeholder="https://www.youtube.com/watch?v=..." required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Play Video</button>
+        </form>
+        </div>
+
+        <footer class="text-center mt-5 text-muted small">
+            Made to help you learn from YouTube—without the distractions of YouTube.<br/>
+            Built with focus in mind.
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
