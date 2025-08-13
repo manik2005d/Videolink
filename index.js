@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const getYouTubeVideoID = require("./utils/urlParse.js");
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname, "/views"));
@@ -15,11 +16,11 @@ app.get("/",(req,res)=>{
 
 //Input handled
 app.get("/yt",(req,res)=>{
-    try{
-        let url = req.query.url;
-        const vId = url.split('=')[1];
+    let url = req.query.url;
+    const vId  = getYouTubeVideoID(url);
+    if(vId){
         res.render("play.ejs", {vId});
-    }catch(err){
+    }else{
         res.render("error.ejs");
     }
 });
