@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,5 +34,122 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aw, Snap!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #202124;
+      color: #e8eaed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+    }
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0 0 10px;
+    }
+    p {
+      font-size: 15px;
+      color: #bdc1c6;
+      margin: 4px 0;
+    }
+    a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #8ab4f8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .reload-btn {
+      margin-top: 30px;
+      padding: 8px 18px;
+      background-color: #8ab4f8;
+      border: none;
+      border-radius: 6px;
+      color: #202124;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .reload-btn:hover {
+      background-color: #669df6;
+    }
+    /* Sad file icon (drawn with ASCII-like divs) */
+    .sad-file {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #9aa0a6;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    .sad-file::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 5px;
+      width: 12px;
+      height: 8px;
+      border: 2px solid #9aa0a6;
+      border-bottom: none;
+      border-radius: 2px 2px 0 0;
+    }
+    .eye {
+      width: 4px;
+      height: 4px;
+      background: #9aa0a6;
+      position: absolute;
+      top: 12px;
+      border-radius: 50%;
+    }
+    .eye.left {
+      left: 10px;
+    }
+    .eye.right {
+      right: 10px;
+    }
+    .mouth {
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+      width: 18px;
+      height: 2px;
+      background: #9aa0a6;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sad-file">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+    <h1>Aw, Snap!</h1>
+    <p>Something went wrong while displaying this web page.</p>
+    <p>Error code: RESULT_CODE_HUNG</p>
+    <a href="#">Learn more</a><br>
+    <button class="reload-btn" onclick="location.reload()">Reload</button>
+  </div>
 </body>
 </html>
